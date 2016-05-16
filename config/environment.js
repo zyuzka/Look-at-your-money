@@ -5,6 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'look-at-your-money',
     podModulePrefix: 'look-at-your-money/pods',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
